@@ -1,0 +1,1 @@
+# Atividade-RLC-Paralelo
