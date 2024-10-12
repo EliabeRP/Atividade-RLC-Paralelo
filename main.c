@@ -171,10 +171,10 @@ int main(){
     solveEquation(1, 0, tensaoC, -1*(sigma), omegad, Ic/capacitancia, 1); // Resolvendo o sistema 2x2
 
     tm = (atan((B2 * omegad - B1 * sigma) / (B1 * omegad + B2 * sigma)))/omegad; // Fórmula para tm do Circuito Superamortecido
-    if (tm < 0){
-        tm += M_PI/omegad; // Caso tm seja negativo, soma-se meio período.
-        printf("tm: %.10lf s\n", tm);
-    } else printf("tm: %.10lf s\n", tm);
+    
+    if (tm < 0) tm += M_PI/omegad; // Caso tm seja negativo, soma-se meio período.
+    
+    printf("tm: %.10lf s\n", tm);
 
     vtm = exp( -1 * sigma * tm) * (B1 * cos(omegad * tm) + B2 * sin(omegad * tm));  // Substituição de tm em v(t) para descobrir o vtm
     printf("vtm: %.2lf V\n", vtm);
