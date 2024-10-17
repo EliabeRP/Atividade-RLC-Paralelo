@@ -41,7 +41,8 @@ void solveEquation(double a1, double b1, double c1, double a2, double b2, double
     return;
 }
 
-//Circuito RLC paralelo
+// Circuito RLC paralelo
+// Para mais informações acerca das demonstrações das fórmulas de "tm", acesse: https://github.com/EliabeRP/Atividade-RLC-Paralelo
 
 int main(){
 
@@ -193,8 +194,9 @@ int main(){
         if (verif == 'n') aux = 0;
         printf("\n");
     }  
-
-    printf("\033[1;36mPrograma encerrado!\033[m");
+    
+    printf("\033[1;36mPara mais informações a respeito das demonstrações de tm de cada tipo de circuito, acesse: https://github.com/EliabeRP/Atividade-RLC-Paralelo");
+    printf("Programa encerrado!\033[m");
 
     return 0;
 }
