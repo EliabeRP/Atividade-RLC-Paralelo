@@ -195,8 +195,8 @@ int main(){
         printf("\n");
     }  
     
-    printf("\033[1;36mPara mais informações a respeito das demonstrações de tm de cada tipo de circuito, acesse: https://github.com/EliabeRP/Atividade-RLC-Paralelo");
-    printf("Programa encerrado!\033[m");
+    printf("\033[1;36mPara mais informacoes a respeito das demonstracoes de tm de cada tipo de circuito, acesse: https://github.com/EliabeRP/Atividade-RLC-Paralelo");
+    printf("\nPrograma encerrado!\033[m");
 
     return 0;
 }
