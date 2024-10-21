@@ -152,7 +152,9 @@ int main(){
 
         // Circuito Criticamente Amortecido
 
-        if (sigma == omega) {
+        // Como é double, é passível de acontecer problemas na comparação entre os pontos flutuantes
+        // Portanto é preciso utilizar essa lógica computacional (abs(x - y) < 1e-9)
+        else if (abs(sigma-omega) < 1e-9) { 
             printf("\nCircuito Criticamente amortecido\n");
             printf("Sigma: %.2lf s^-1\n", sigma);
             printf("Omega: %.2lf rad/s\n", omega);
@@ -167,7 +169,7 @@ int main(){
 
         // Circuito Subamortecido
         
-        if (sigma < omega){
+        else if (sigma < omega){
             omegad = sqrt(pow(omega, 2) - pow(sigma, 2));
 
             printf("\nCircuito Subamortecido\n");
