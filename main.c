@@ -152,7 +152,7 @@ int main(){
 
         // Circuito Criticamente Amortecido
 
-        // Como é double, é passível de acontecer problemas na comparação entre os pontos flutuantes
+        // Como as variáveis são predefinidas como double, é passível de acontecer problemas na comparação entre os pontos flutuantes
         // Portanto é preciso utilizar essa lógica computacional (abs(x - y) < 1e-9)
         else if (abs(sigma-omega) < 1e-9) { 
             printf("\nCircuito Criticamente amortecido\n");
